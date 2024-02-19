@@ -99,7 +99,7 @@ $bdet = mysqli_query($conn, $sql_show);
                                         <th style="width: 17%;">Student Name</th>
                                         <th style="width: 14%;">Note</th>
                                         <th style="width: 11%">View Bill</th>
-                                        <th style="width: 11%;">Send  Email</th>
+                                       <!-- <th style="width: 11%;">Send  Email</th>-->
                                         <th style="width: 12%;">Payment</th>                                        
                                     </tr>
                                 </thead>
@@ -133,7 +133,7 @@ $bdet = mysqli_query($conn, $sql_show);
                                                 </div>
                                             </form>
                                         </td>
-                                        <td>
+                                       <!-- <td>
                                             <form action="#" method="post" class="send-mail" >
                                                 <input type="hidden" name="bid" id="bid" value="<?php echo $b_detail['bid'];?>"> 
                                                 <input type="hidden" name="sid" id="sid" value="<?php echo $b_detail['sid'];?>">
@@ -151,7 +151,7 @@ $bdet = mysqli_query($conn, $sql_show);
                                                     
                                                 </div>
                                             </form>
-                                        </td>
+                                        </td>-->
                                         <td>
                                         <?php   
                                             if($b_detail['complete']=='0'){
