@@ -116,7 +116,7 @@
                     if($flag){
                         echo '
                     <div class="progress-details">
-                        <center><h3>Acadameic details of '. $mname .' </h3></center>
+                        <center><h3>Acadamic details </h3></center>
                         <br>
                         <div class="stud-info">
                         <span><b>Name:</b> '. $stdprof["sname"] .'</span>
@@ -183,10 +183,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                                    <div class="formsub">
-                                        <div class="btn-holder">
-                                            <button type="submit" id="bt-sub2" class="bt-report"  style="color: #fff;">Send Progress Report<i class="bx bx-mail-send"></i></button>                                    </div>
-                                    </div>
+                                    
                                 </form>
                         </div>';
                         }else{

@@ -21,7 +21,7 @@ $payment = array(
 //course array
 
 $courses = array(
-    'Grade 4'             => "Grade 4",
+    'it'             => "it",
     'Grade 5'             => "Grade 5",
     'Grade 6'             => "Grade 6",
     'Grade 7'             => "Grade 7",

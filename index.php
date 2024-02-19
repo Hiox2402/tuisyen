@@ -150,7 +150,7 @@ while ($row = mysqli_fetch_assoc($result1)) {
                         </div>
                         <i class='bx bx-error ico five'></i>
                         </div>
-                        <div class="box">
+                        <!--<div class="box">
                         <div class="right-side">
                             <div class="box-topic">Income</div>
                             <div class="number"><?php  
@@ -170,7 +170,7 @@ while ($row = mysqli_fetch_assoc($result1)) {
                             </div>
                         </div>
                         <i class='bx bx-wallet-alt ico four' ></i>
-                        </div>
+                        </div>-->
                     </div>
 
                     <!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
