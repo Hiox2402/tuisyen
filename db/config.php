@@ -21,17 +21,17 @@ $payment = array(
 //course array
 
 $courses = array(
-    'it'             => "it",
-    'Grade 5'             => "Grade 5",
-    'Grade 6'             => "Grade 6",
-    'Grade 7'             => "Grade 7",
-    'PreAlgebra'          => "PreAlgebra",
-    'Algebra 1'           => "Algebra 1",
-    'Algebra 2'           => "Algebra 2",
-    'Algebra 2 & Trigonometry' => "Algebra 2 & Trigonometry",
-    'Geometry'            => "Geometry",
-    'PreCalculus'         => "PreCalculus",
-    'Other'               => "Other",
+    'IT'             => "IT",
+    'Bahasa Melayu'             => "Bahasa Melayu",
+    'Sains'             => "Sains",
+    'Add Math'             => "Add Math",
+    'Sejarah'          => "Sejarah",
+    'English'           => "English",
+    //'Algebra 2'           => "Algebra 2",
+    //'Algebra 2 & Trigonometry' => "Algebra 2 & Trigonometry",
+    //'Geometry'            => "Geometry",
+    //'PreCalculus'         => "PreCalculus",
+    //'Other'               => "Other",
 );
 
 //timezone array

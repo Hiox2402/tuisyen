@@ -109,7 +109,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                         <input type="text" name="sname" id="sname" required><br><br>
                                         <label for="course">Course</label><br>
                                         <select name="course" id="course">
-                                            <option selected="selected">Select grade</option>
+                                            <option selected="selected">Select Course</option>
                                             <?php
                                                 foreach($courses as $cval => $cdisp){
                                                     echo '<option value="'. $cval .'">'. $cdisp .'</option>';
