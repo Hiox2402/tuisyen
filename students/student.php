@@ -81,7 +81,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                             }
                                     ?>
                                 </td>
-                                <td><?php  echo $stdetail['fee'] . "$"; ?></td>
+                                <td><?php  echo $stdetail['fee'] . " Ringgit"; ?></td>
                                 <td>
                                     <form action="std_profile.php" method="post">
                                         <input type="hidden" name="view_id" value="<?php echo $stdetail['sid']; ?>">

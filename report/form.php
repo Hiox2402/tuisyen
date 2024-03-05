@@ -152,7 +152,7 @@ $result2 = mysqli_fetch_assoc($result2);
                                         <td style="color:#b13935;"><b>Academic details</b></td>
                                     </tr>
                                     <tr>
-                                        <td>Topen taken in the class:</td>
+                                        <td>Topic taken in the class:</td>
                                         <td><textarea class="big" name="takentopic" id="takentopic" required></textarea></td>
                                     </tr>
                                     <tr>
