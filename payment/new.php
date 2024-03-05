@@ -118,7 +118,7 @@
                                         </tr>
                                         <tr>
                                             <td>Fee: </td>
-                                            <td id="fee">'.   $result2["fee"]   .' $</td>
+                                            <td id="fee">'.   $result2["fee"]   .' Ringgit</td>
                                         </tr>
                                         <tr >
                                             <td style="color:#b13935;" colspan="2"><b>Unpaid sessions</b></td>
