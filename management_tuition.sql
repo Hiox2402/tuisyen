@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2023 at 03:05 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Mar 06, 2024 at 07:37 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,6 +43,14 @@ CREATE TABLE `bill` (
   `bsent` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `bill`
+--
+
+INSERT INTO `bill` (`ubid`, `bid`, `pamt`, `sid`, `scid`, `due`, `complete`, `note`, `ramt`, `psrc`, `ptxnid`, `pdate`, `bsent`) VALUES
+(1, 'CC4b55b', '20 $', 4, 3, '2024-02-20', 1, '', '10', 'bank', '07876546576', '2024-02-28', 0),
+(2, 'CC65b28', '60', 8, 4, '2024-03-14', 1, '', '60', 'bank', '07876546576', '2024-03-08', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -74,6 +82,13 @@ CREATE TABLE `report` (
   `psent` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `report`
+--
+
+INSERT INTO `report` (`rid`, `scid`, `sid`, `scstatus`, `cancby`, `cReason`, `AcSTime`, `AcFTime`, `LDuration`, `LDurReason`, `takenTopic`, `nextTopic`, `HWork`, `hwNote`, `schMark`, `wbMark`, `pvtComment`, `parentComm`, `pubComment`, `scdate`, `billed`, `psent`) VALUES
+(2, 4, 8, 'Completed', '', '', '18:30:00', '22:13:00', 0, '', 'Maintenance PC', '', 'notgiven', '', '', '', '', '', '', '0000-00-00', 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -87,6 +102,13 @@ CREATE TABLE `schedule` (
   `sctime` time NOT NULL,
   `scstatus` varchar(35) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `schedule`
+--
+
+INSERT INTO `schedule` (`scid`, `sid`, `scdate`, `sctime`, `scstatus`) VALUES
+(4, 8, '0000-00-00', '18:30:00', 'Completed');
 
 -- --------------------------------------------------------
 
@@ -110,6 +132,16 @@ CREATE TABLE `std_info` (
   `doj` date NOT NULL,
   `note` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `std_info`
+--
+
+INSERT INTO `std_info` (`sid`, `sname`, `course`, `smail`, `spno`, `ic`, `pname`, `pmail`, `ppno`, `tzone`, `ctry`, `rm`, `doj`, `note`) VALUES
+(5, 'lkdpawkdwldd', 'IT', 'dndda@gmail.com', 'wkqjdoqwjdq', 'daidawddwqdkankd', 'dewjnkednwd', 'dsakjokqwdq@gmail.com', 'dpoajdpw', 'America/Bogota', 'dawdnkawddamnd111', '222', '2024-02-21', 'dsnkwd'),
+(6, 'asdasdas', 'Bahasa Melayu', 'ahhaha@gmail.com', '01213131', '', 'malajiq', 'afiq02345@gmail.com', '01111637786', 'Asia/Kuala_Lumpur', 'Malaysia', '100', '2024-02-27', ''),
+(7, 'jaja', 'IT', 'dada@gmail.com', '0121212121', '011112', 'wawa', 'mama@gmail.com', '0123242141', 'Asia/Kuala_Lumpur', 'Malaysia', '13', '2024-03-05', 'ga'),
+(8, 'didi', 'IT', 'didi24@gmail.com', '0123422221', '0302010401', 'didi daus', 'didaus@gmail.com', '0132211231', 'Asia/Kuala_Lumpur', 'Malaysia', '30', '2024-03-06', 'father gay person');
 
 -- --------------------------------------------------------
 
@@ -170,25 +202,25 @@ ALTER TABLE `txn`
 -- AUTO_INCREMENT for table `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `ubid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ubid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `report`
 --
 ALTER TABLE `report`
-  MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `schedule`
 --
 ALTER TABLE `schedule`
-  MODIFY `scid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `scid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `std_info`
 --
 ALTER TABLE `std_info`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `txn`
