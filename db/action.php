@@ -8,7 +8,7 @@ if(isset($_POST["addstud"])){
     $course = mysqli_real_escape_string($conn, $_POST["course"]);
     $smail = mysqli_real_escape_string($conn, $_POST["smail"]);
     $spno = mysqli_real_escape_string($conn, $_POST["spno"]);
-    $skype = mysqli_real_escape_string($conn, $_POST["skype"]);
+    $ic = mysqli_real_escape_string($conn, $_POST["ic"]);
     $pname = mysqli_real_escape_string($conn, $_POST["pname"]);
     $pmail = mysqli_real_escape_string($conn, $_POST["pmail"]);
     $ppno = mysqli_real_escape_string($conn, $_POST["ppno"]);
@@ -19,8 +19,8 @@ if(isset($_POST["addstud"])){
     $note = mysqli_real_escape_string($conn, $_POST["note"]);
 
 
-    $sql = "INSERT INTO std_info (sname, course, smail, spno, skype, pname, pmail, ppno, tzone, ctry, fee, doj, note)
-    VALUES ('$sname', '$course', '$smail', '$spno', '$skype', '$pname', '$pmail', '$ppno', '$tzone', '$ctry', '$fee', '$doj', '$note')";
+    $sql = "INSERT INTO std_info (sname, course, smail, spno, ic, pname, pmail, ppno, tzone, ctry, fee, doj, note)
+    VALUES ('$sname', '$course', '$smail', '$spno', '$ic', '$pname', '$pmail', '$ppno', '$tzone', '$ctry', '$fee', '$doj', '$note')";
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
@@ -39,7 +39,7 @@ if(isset($_POST["updstud"])){
     $course = mysqli_real_escape_string($conn, $_POST["course"]);
     $smail = mysqli_real_escape_string($conn, $_POST["smail"]);
     $spno = mysqli_real_escape_string($conn, $_POST["spno"]);
-    $skype = mysqli_real_escape_string($conn, $_POST["skype"]);
+    $ic = mysqli_real_escape_string($conn, $_POST["ic"]);
     $pname = mysqli_real_escape_string($conn, $_POST["pname"]);
     $pmail = mysqli_real_escape_string($conn, $_POST["pmail"]);
     $ppno = mysqli_real_escape_string($conn, $_POST["ppno"]);
@@ -49,7 +49,7 @@ if(isset($_POST["updstud"])){
     $doj = mysqli_real_escape_string($conn, $_POST["doj"]);
     $note = mysqli_real_escape_string($conn, $_POST["note"]);
 
-    $sql = "UPDATE std_info SET sname='$sname', course='$course', smail='$smail', spno='$spno', skype='$skype', pname='$pname', pmail='$pmail', 
+    $sql = "UPDATE std_info SET sname='$sname', course='$course', smail='$smail', spno='$spno', ic='$ic', pname='$pname', pmail='$pmail', 
     ppno='$ppno', tzone='$tzone', ctry='$ctry', fee='$fee', doj='$doj', note='$note' WHERE sid='$sid'";
     $result = mysqli_query($conn, $sql);
 
@@ -229,7 +229,7 @@ if(isset($_POST['addbill'])){
 if(isset($_POST['view-history'])){
     $complete = $_POST['complete'];
     $sid = $_POST['sid'];
-    $sql = "SELECT sid,sname,pname,course,skype,fee FROM std_info WHERE sid='$sid'";
+    $sql = "SELECT sid,sname,pname,course,ic,fee FROM std_info WHERE sid='$sid'";
     $result2 = mysqli_query($conn, $sql);
     $result2 = mysqli_fetch_assoc($result2);
     $j=1;
@@ -258,8 +258,8 @@ if(isset($_POST['view-history'])){
                                   <td width="70%">'.$result2["course"].'</td>  
                              </tr>  
                              <tr>  
-                                  <td width="30%"><label><b>Skype ID</b></label></td>  
-                                  <td width="70%">'.$result2["skype"].'</td>  
+                                  <td width="30%"><label><b>IC </b></label></td>  
+                                  <td width="70%">'.$result2["ic"].'</td>  
                              </tr>  
                              <tr>  
                                   <td width="30%"><label><b>Parent name</b></label></td>  

@@ -100,7 +100,7 @@ CREATE TABLE `std_info` (
   `course` varchar(25) NOT NULL,
   `smail` varchar(40) NOT NULL DEFAULT 'conronald13@gmail.com',
   `spno` varchar(15) NOT NULL,
-  `skype` varchar(35) NOT NULL,
+  `ic` varchar(35) NOT NULL,
   `pname` text NOT NULL,
   `pmail` varchar(40) NOT NULL,
   `ppno` varchar(15) NOT NULL,

@@ -92,8 +92,8 @@ if(isset($_POST["view_id"])){
                                         <input type="email" name="smail" id="smail" value="<?php  echo $stdetail['smail'];   ?>"><br><br>
                                         <label for="spno">Student phone</label><br>
                                         <input type="tel" name="spno" id="spno " value="<?php  echo $stdetail['spno'];   ?>"><br><br>
-                                        <label for="skype">Skype ID</label><br>
-                                        <input type="text" name="skype" id="skype" value="<?php  echo $stdetail['skype'];   ?>"><br><br>
+                                        <label for="ic">IC</label><br>
+                                        <input type="text" name="ic" id="ic" value="<?php  echo $stdetail['ic'];   ?>"><br><br>
                                         <label for="pname">Parent name</label><br>
                                         <input type="text" name="pname" id="pname" value="<?php  echo $stdetail['pname'];   ?>"><br><br>
                                         <label for="pmail">Parent email</label><br>

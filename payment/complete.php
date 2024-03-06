@@ -65,7 +65,7 @@ if(isset($_POST["bid"])){
                         <button onclick="location.href='history.php'" type="button" id="bt-back"><i class='bx bx-left-arrow-alt' ></i> Back</button>
                     </div>
                     <?php
-                            $sql = "SELECT sid,sname,pname,course,skype,fee FROM std_info WHERE sid='$sid'";
+                            $sql = "SELECT sid,sname,pname,course,ic,fee FROM std_info WHERE sid='$sid'";
                             $result2 = mysqli_query($conn, $sql);
                             $result2 = mysqli_fetch_assoc($result2);
 
@@ -89,8 +89,8 @@ if(isset($_POST["bid"])){
                                             <td>'.   $result2["course"]   .'</td>
                                         </tr>
                                         <tr>
-                                            <td>Skype ID: </td>
-                                            <td>'.   $result2["skype"]   .'</td>
+                                            <td>IC: </td>
+                                            <td>'.   $result2["ic"]   .'</td>
                                         </tr>
                                         <tr>
                                             <td>Parent name: </td>

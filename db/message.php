@@ -1524,7 +1524,7 @@ if(isset($_POST['send-report'])){
                         <b>Name:</b> ". $result['sname'] ." <br>
                         <b>Student email:</b> ". $result['smail'] ." <br>
                         <b>Student phone:</b> ". $result['spno'] ." <br>
-                        <b>Skye ID:</b> ". $result['skype'] ." <br>
+                        <b>IC:</b> ". $result['ic'] ." <br>
                         <b>Country:</b> ". $result['ctry'] ." <br>
                     </div>
             

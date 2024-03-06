@@ -85,7 +85,7 @@
                     <?php
                     if($_GET["sname"] !== "" && isset($_GET["sname"])){
                             $sid = $_GET["sname"];
-                            $sql = "SELECT sid,sname,pname,course,skype,fee FROM std_info WHERE sid='$sid'";
+                            $sql = "SELECT sid,sname,pname,course,ic,fee FROM std_info WHERE sid='$sid'";
                             $result2 = mysqli_query($conn, $sql);
                             $result2 = mysqli_fetch_assoc($result2);
 
@@ -109,8 +109,8 @@
                                             <td>'.   $result2["course"]   .'</td>
                                         </tr>
                                         <tr>
-                                            <td>Skype ID: </td>
-                                            <td>'.   $result2["skype"]   .'</td>
+                                            <td>IC: </td>
+                                            <td>'.   $result2["ic"]   .'</td>
                                         </tr>
                                         <tr>
                                             <td>Parent name: </td>

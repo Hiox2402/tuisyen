@@ -120,8 +120,8 @@ $std_data = mysqli_query($conn, $sql_q);
                                         <input type="email" name="smail" id="smail" required><br><br>
                                         <label for="spno">Student phone</label><br>
                                         <input type="tel" name="spno" id="spno " required><br><br>
-                                        <label for="skype">Skype ID</label><br>
-                                        <input type="text" name="skype" id="skype" required><br><br>
+                                        <label for="ic">IC</label><br>
+                                        <input type="text" name="ic" id="ic" required><br><br>
                                         <label for="pname">Parent name</label><br>
                                         <input type="text" name="pname" id="pname" required><br><br>
                                         <label for="pmail">Parent email</label><br>
