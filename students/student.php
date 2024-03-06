@@ -140,7 +140,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                         </select><br><br>
                                         <label for="ctry">Country</label><br>
                                         <input type="text" name="ctry" id="ctry" required><br><br>
-                                        <label for="rm">RM</label><br>
+                                        <label for="rm">Fee RM</label><br>
                                         <input type="number" name="rm" id="rm" required><br><br>
                                         <label for="doj">Date of joining</label><br>
                                         <input type="date" name="doj" id="doj" required><br><br>
