@@ -13,7 +13,7 @@ if(isset($_POST['send-mail'])){
     $t_result = mysqli_fetch_assoc($result_temp); //temp
     
     $sid = $_POST['sid'];
-    $sql2 = "SELECT sname,pname,smail,pmail,fee FROM std_info WHERE sid='$sid'";
+    $sql2 = "SELECT sname,pname,smail,pmail,rm FROM std_info WHERE sid='$sid'";
     $result2 = mysqli_query($conn, $sql2);
     $result2 = mysqli_fetch_assoc($result2);
 
@@ -541,7 +541,7 @@ if(mysqli_num_rows($result) > 0){
                 $body .= '<tr>
                             <td width="50%" class="purchase_item"><span class="f-fallback">'. $result_sess["takenTopic"] .'</span></td>
                             <td width="30%" class="purchase_item"><span class="f-fallback">'. $result_sess["scdate"] .'</span></td>
-                            <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback">'. $result2["fee"] .'</span></td>
+                            <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback">'. $result2["rm"] .'</span></td>
                           </tr>';
             }
         }
@@ -1537,7 +1537,7 @@ if(isset($_POST['send-report'])){
                     <div class='pmark2'></div>
                     <div class='course-details'>
                         <b>Course:</b> ". $result['course'] ." <br>
-                        <b>Fee:</b> ". $result['fee'] ." <br>
+                        <b>RM:</b> ". $result['rm'] ." <br>
                         <b>Total number of sessions:</b> ". count($scdate) ." <br>
                     </div>
             

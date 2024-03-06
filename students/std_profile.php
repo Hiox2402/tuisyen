@@ -117,8 +117,8 @@ if(isset($_POST["view_id"])){
                                         </select><br><br>
                                         <label for="ctry">Country</label><br>
                                         <input type="text" name="ctry" id="ctry" value="<?php  echo $stdetail['ctry'];   ?>" ><br><br>
-                                        <label for="fee">Fee ($)</label><br>
-                                        <input type="number" name="fee" id="fee" value="<?php  echo $stdetail['fee'];   ?>" ><br><br>
+                                        <label for="rm">RM</label><br>
+                                        <input type="number" name="rm" id="rm" value="<?php  echo $stdetail['rm'];   ?>" ><br><br>
                                         <label for="doj">Date of joining</label><br>
                                         <input type="date" name="doj" id="doj" value="<?php  echo $stdetail['doj'];   ?>"><br><br>
                                         <label for="note">Note (optional)</label><br>

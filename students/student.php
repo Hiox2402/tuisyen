@@ -61,7 +61,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                     <th style="width:22%;">Name</th>
                                     <th style="width:19%;">Course</th>
                                     <th style="width:27%;">Timezone</th>
-                                    <th style="width:8%;">Fee</th>
+                                    <th style="width:8%;">RM</th>
                                     <th style="width:9%; text-align: center;">Action</th>
                                 </tr>
                             </thead>
@@ -81,7 +81,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                             }
                                     ?>
                                 </td>
-                                <td><?php  echo $stdetail['fee'] . " Ringgit"; ?></td>
+                                <td><?php  echo $stdetail['rm'] . " Ringgit"; ?></td>
                                 <td>
                                     <form action="std_profile.php" method="post">
                                         <input type="hidden" name="view_id" value="<?php echo $stdetail['sid']; ?>">
@@ -102,7 +102,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                 <div class="title"><h4>Add Student</h4></div>
                                 <br>
                                 <div class="container">
-                                    <img src="https://www.kindpng.com/picc/m/171-1712282_profile-icon-png-profile-icon-vector-png-transparent.png" alt="profile-icon" style=" display: block; margin-left: auto; margin-right: auto; width:30%; max-width:200px; border-radius: 50%;">
+                                   
                                     <br>
                                     <form action="../db/action.php" method="post">
                                         <label for="sname">Student name</label><br>
@@ -140,8 +140,8 @@ $std_data = mysqli_query($conn, $sql_q);
                                         </select><br><br>
                                         <label for="ctry">Country</label><br>
                                         <input type="text" name="ctry" id="ctry" required><br><br>
-                                        <label for="fee">Fee ($)</label><br>
-                                        <input type="number" name="fee" id="fee" required><br><br>
+                                        <label for="rm">RM</label><br>
+                                        <input type="number" name="rm" id="rm" required><br><br>
                                         <label for="doj">Date of joining</label><br>
                                         <input type="date" name="doj" id="doj" required><br><br>
                                         <label for="note">Note (optional)</label><br>

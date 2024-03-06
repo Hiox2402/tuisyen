@@ -14,13 +14,13 @@ if(isset($_POST["addstud"])){
     $ppno = mysqli_real_escape_string($conn, $_POST["ppno"]);
     $tzone = mysqli_real_escape_string($conn, $_POST["tzone"]);
     $ctry = mysqli_real_escape_string($conn, $_POST["ctry"]);
-    $fee = mysqli_real_escape_string($conn, $_POST["fee"]);
+    $rm = mysqli_real_escape_string($conn, $_POST["rm"]);
     $doj = mysqli_real_escape_string($conn, $_POST["doj"]);
     $note = mysqli_real_escape_string($conn, $_POST["note"]);
 
 
-    $sql = "INSERT INTO std_info (sname, course, smail, spno, ic, pname, pmail, ppno, tzone, ctry, fee, doj, note)
-    VALUES ('$sname', '$course', '$smail', '$spno', '$ic', '$pname', '$pmail', '$ppno', '$tzone', '$ctry', '$fee', '$doj', '$note')";
+    $sql = "INSERT INTO std_info (sname, course, smail, spno, ic, pname, pmail, ppno, tzone, ctry, rm, doj, note)
+    VALUES ('$sname', '$course', '$smail', '$spno', '$ic', '$pname', '$pmail', '$ppno', '$tzone', '$ctry', '$rm', '$doj', '$note')";
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
@@ -45,12 +45,12 @@ if(isset($_POST["updstud"])){
     $ppno = mysqli_real_escape_string($conn, $_POST["ppno"]);
     $tzone = mysqli_real_escape_string($conn, $_POST["tzone"]);
     $ctry = mysqli_real_escape_string($conn, $_POST["ctry"]);
-    $fee = mysqli_real_escape_string($conn, $_POST["fee"]);
+    $rm = mysqli_real_escape_string($conn, $_POST["rm"]);
     $doj = mysqli_real_escape_string($conn, $_POST["doj"]);
     $note = mysqli_real_escape_string($conn, $_POST["note"]);
 
     $sql = "UPDATE std_info SET sname='$sname', course='$course', smail='$smail', spno='$spno', ic='$ic', pname='$pname', pmail='$pmail', 
-    ppno='$ppno', tzone='$tzone', ctry='$ctry', fee='$fee', doj='$doj', note='$note' WHERE sid='$sid'";
+    ppno='$ppno', tzone='$tzone', ctry='$ctry', rm='$rm', doj='$doj', note='$note' WHERE sid='$sid'";
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
@@ -229,7 +229,7 @@ if(isset($_POST['addbill'])){
 if(isset($_POST['view-history'])){
     $complete = $_POST['complete'];
     $sid = $_POST['sid'];
-    $sql = "SELECT sid,sname,pname,course,ic,fee FROM std_info WHERE sid='$sid'";
+    $sql = "SELECT sid,sname,pname,course,ic,rm FROM std_info WHERE sid='$sid'";
     $result2 = mysqli_query($conn, $sql);
     $result2 = mysqli_fetch_assoc($result2);
     $j=1;
@@ -266,8 +266,8 @@ if(isset($_POST['view-history'])){
                                   <td width="70%">'.$result2["pname"].'</td>  
                              </tr>  
                              <tr>  
-                                  <td width="30%"><label><b>Fee</b></label></td>  
-                                  <td width="70%">'.$result2["fee"].'</td>  
+                                  <td width="30%"><label><b>RM</b></label></td>  
+                                  <td width="70%">'.$result2["rm"].'</td>  
                              </tr>  
                              <tr>
                              <td colspan="2">
@@ -347,7 +347,7 @@ if (!empty($sdateArr) && !empty($topicArr)) {
     for ($i = 0; $i < $sdateArrLength && $i < $topicArrLength; $i++) {
         $sdate = $sdateArr[$i];
         $topic = $topicArr[$i];
-        $output .=  '📅 '. $sdate .': '. $topic .' - '.$result2["fee"].'<br>';
+        $output .=  '📅 '. $sdate .': '. $topic .' - '.$result2["rm"].'<br>';
     }
 }
 

@@ -85,7 +85,7 @@
                     <?php
                     if($_GET["sname"] !== "" && isset($_GET["sname"])){
                             $sid = $_GET["sname"];
-                            $sql = "SELECT sid,sname,pname,course,ic,fee FROM std_info WHERE sid='$sid'";
+                            $sql = "SELECT sid,sname,pname,course,ic,rm FROM std_info WHERE sid='$sid'";
                             $result2 = mysqli_query($conn, $sql);
                             $result2 = mysqli_fetch_assoc($result2);
 
@@ -117,8 +117,8 @@
                                             <td>'.   $result2["pname"]   .'</td>
                                         </tr>
                                         <tr>
-                                            <td>Fee: </td>
-                                            <td id="fee">'.   $result2["fee"]   .' Ringgit</td>
+                                            <td>RM: </td>
+                                            <td id="rm">'.   $result2["rm"]   .' Ringgit</td>
                                         </tr>
                                         <tr >
                                             <td style="color:#b13935;" colspan="2"><b>Unpaid sessions</b></td>

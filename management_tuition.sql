@@ -106,7 +106,7 @@ CREATE TABLE `std_info` (
   `ppno` varchar(15) NOT NULL,
   `tzone` varchar(30) NOT NULL,
   `ctry` text NOT NULL,
-  `fee` varchar(5) NOT NULL,
+  `rm` varchar(5) NOT NULL,
   `doj` date NOT NULL,
   `note` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
