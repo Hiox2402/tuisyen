@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2024 at 04:29 PM
+-- Generation Time: Mar 09, 2024 at 05:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -51,47 +51,6 @@ INSERT INTO `bill` (`ubid`, `bid`, `pamt`, `sid`, `scid`, `due`, `complete`, `no
 (1, 'CC4b55b', '20 $', 4, 3, '2024-02-20', 1, '', '10', 'bank', '07876546576', '2024-02-28', 0),
 (2, 'CC65b28', '60', 8, 4, '2024-03-14', 1, '', '60', 'bank', '07876546576', '2024-03-08', 0),
 (3, 'CCe1d5d', '2500 $', 6, 5, '2024-03-06', 1, '', 'asda', 'bank', 'lmlml', '2024-03-06', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `login_attempts`
---
-
-CREATE TABLE `login_attempts` (
-  `user_id` int(11) NOT NULL,
-  `time` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `login_attempts`
---
-
-INSERT INTO `login_attempts` (`user_id`, `time`) VALUES
-(1, '1385995353'),
-(1, '1386011064');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `members`
---
-
-CREATE TABLE `members` (
-  `id` int(11) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` char(128) NOT NULL,
-  `salt` char(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `members`
---
-
-INSERT INTO `members` (`id`, `username`, `email`, `password`, `salt`) VALUES
-(1, 'test_user', 'test@example.com', '00807432eae173f652f2064bdca1b61b290b52d40e429a7d295d76a71084aa96c0233b82f1feac45529e0726559645acaed6f3ae58a286b9f075916ebf66cacc', 'f9aab579fc1b41ed0c44fe4ecdbfcdb4cb99b9023abb241a6db833288f4eea3c02f76e0d35204a8695077dcf81932aa59006423976224be0390395bae152d4ef'),
-(2, 'amirulyus', 'amirulyus@gmail.com', '491ce35e0a199b8dc298e3a74924fd11a916f4d091eafa6a6c793660c28b5f4f61868e019ca3d1c1e5d7cf36f0e728d0176a1f20b12a37866e099a61f4e6a298', '135657dc5316fd4ffb76377aec2f18a056599e3ca2385c17189750c3717e38cac01c877f4c249c1d48d5a0d757965d991d3b218be17fc29c04667646e36e60f6');
 
 -- --------------------------------------------------------
 
@@ -206,6 +165,29 @@ CREATE TABLE `txn` (
   `scid` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(10) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `updated_at` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `firstname`, `lastname`, `email`, `password`, `updated_at`) VALUES
+(0, 'AMIRUL SYUSHAIDI BIN', 'LATIF', 'amirulyus@gmail.com', '9e0d6580b71ecdcd488dba342cdcd999', '2024-03-09 16:52:13'),
+(0, 'AMIRUL SYUSHAIDI', 'LATIF', 'amirulyusfx@gmail.com', '9e0d6580b71ecdcd488dba342cdcd999', '2024-03-09 17:03:09');
+
 --
 -- Indexes for dumped tables
 --
@@ -215,12 +197,6 @@ CREATE TABLE `txn` (
 --
 ALTER TABLE `bill`
   ADD PRIMARY KEY (`ubid`);
-
---
--- Indexes for table `members`
---
-ALTER TABLE `members`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `report`
@@ -255,12 +231,6 @@ ALTER TABLE `txn`
 --
 ALTER TABLE `bill`
   MODIFY `ubid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `members`
---
-ALTER TABLE `members`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `report`
