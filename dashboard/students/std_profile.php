@@ -53,6 +53,7 @@ if(isset($_POST["view_id"])){
                     </li>
                     <li><a href="https://app.ziteboard.com/" target="_blank"><i class='bx bx-chalkboard' ></i> Ziteboard</a></li>
                     <li><a href="https://google.com" target="_blank"><i class='bx bxl-google' ></i>oogle</a></li>
+                    <li><a href="../users/logout"> Logout</a></li>
                 </ul>
             </div>
             <div class="main-content">
@@ -100,22 +101,6 @@ if(isset($_POST["view_id"])){
                                         <input type="email" name="pmail" id="pmail" value="<?php  echo $stdetail['pmail'];   ?>"><br><br>
                                         <label for="ppno">Parent phone</label><br>
                                         <input type="tel" name="ppno" id="ppno" value="<?php  echo $stdetail['ppno'];   ?>"><br><br>
-                                        <label for="tzone">Timezone</label><br>
-                                        <select name="tzone" id="tzone">
-
-                                            <?php
-                                            
-                                                foreach($timezones as $val => $disp){
-                                                    echo '<option '; 
-                                                    if($val == $stdetail['tzone']){  
-                                                        echo 'selected="selected"';   
-                                                    }
-                                                    echo ' value="'. $val .'">'. $disp .'</option>';
-                                                }
-                                            
-                                            ?>
-                                        </select><br><br>
-                                        <label for="ctry">Country</label><br>
                                         <input type="text" name="ctry" id="ctry" value="<?php  echo $stdetail['ctry'];   ?>" ><br><br>
                                         <label for="rm">RM</label><br>
                                         <input type="number" name="rm" id="rm" value="<?php  echo $stdetail['rm'];   ?>" ><br><br>

@@ -46,6 +46,7 @@ $std_data = mysqli_query($conn, $sql_q);
                     </li>
                     <li><a href="https://app.ziteboard.com/" target="_blank"><i class='bx bx-chalkboard' ></i> Ziteboard</a></li>
                     <li><a href="https://google.com" target="_blank"><i class='bx bxl-google' ></i>oogle</a></li>
+                    <li><a href="../users/logout"> Logout</a></li>
                 </ul>
             </div>
             <div class="main-content">
@@ -60,7 +61,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                     <th style="width:5%;">Sl.no</th>
                                     <th style="width:22%;">Name</th>
                                     <th style="width:19%;">Course</th>
-                                    <th style="width:27%;">Timezone</th>
+                                    <!--<th style="width:27%;">Timezone</th>-->
                                     <th style="width:8%;">RM</th>
                                     <th style="width:9%; text-align: center;">Action</th>
                                 </tr>
@@ -74,13 +75,6 @@ $std_data = mysqli_query($conn, $sql_q);
                                 <td><?php  echo $i; ?> <span class="s" style="opacity: 0;"><?php echo $stdetail['sid'];?></span></td>
                                 <td><?php  echo $stdetail['sname']; ?></td>
                                 <td><?php  echo $stdetail['course']; ?></td>
-                                <td><?php  
-                                            foreach($timezones as $val => $disp){
-                                                if($val == $stdetail['tzone'])
-                                                    echo $disp;
-                                            }
-                                    ?>
-                                </td>
                                 <td><?php  echo $stdetail['rm'] . " Ringgit"; ?></td>
                                 <td>
                                     <form action="std_profile.php" method="post">
@@ -128,18 +122,6 @@ $std_data = mysqli_query($conn, $sql_q);
                                         <input type="email" name="pmail" id="pmail" required><br><br>
                                         <label for="ppno">Parent phone</label><br>
                                         <input type="tel" name="ppno" id="ppno" required><br><br>
-                                        <label for="tzone">Timezone</label><br>
-                                        <select name="tzone" id="tzone">
-                                            <option selected="selected" >Select timezone</option>
-
-                                            <?php
-                                                foreach($timezones as $val => $disp){
-                                                    echo '<option value="'. $val .'">'. $disp .'</option>';
-                                                }
-                                            ?>
-                                        </select><br><br>
-                                        <label for="ctry">Country</label><br>
-                                        <input type="text" name="ctry" id="ctry" required><br><br>
                                         <label for="rm">Fee RM</label><br>
                                         <input type="number" name="rm" id="rm" required><br><br>
                                         <label for="doj">Date of joining</label><br>
