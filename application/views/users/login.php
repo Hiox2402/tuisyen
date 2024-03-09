@@ -35,16 +35,16 @@
                                 <label class="control-label" for="inputError"><?php echo form_error('password'); ?></label>
                                 <input class="form-control" placeholder="Password" name="password" type="password" value="">
                             </div>
-                            <div class="checkbox">
+                           <!-- <div class="checkbox">
                                 <label>
                                     <input name="remember" type="checkbox" value="Remember Me">Remember Me
                                 </label>
-                            </div>
+                            </div>-->
                             <button class="btn btn-success btn-block">Login</button>
-                            <div style="padding-top: 10px;">
+                           <!-- <div style="padding-top: 10px;">
                                 <a href=""><label style="cursor: pointer;">Forgot Password</label></a> 
                                 <a href="users/register" class="pull-right"><label style="cursor: pointer;">Register</label></a>
-                            </div>
+                            </div>-->
                         </fieldset>
                     <?php echo form_close(); ?>
 					<div class="col-md-12">

@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Tuisyen</title>
+    <link rel="icon" type="image/x-icon" href="../img2/favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="<?=base_url()?>assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
