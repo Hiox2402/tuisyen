@@ -63,7 +63,7 @@ $bdet = mysqli_query($conn, $sql_show);
                     </li>
                     <li><a href="https://app.ziteboard.com/" target="_blank"><i class='bx bx-chalkboard' ></i> Ziteboard</a></li>
                     <li><a href="https://google.com" target="_blank"><i class='bx bxl-google' ></i>oogle</a></li>
-                    <li><a href="../users/logout"> Logout</a></li>
+                    <li><a href="../../users/logout"> Logout</a></li>
                 </ul>
             </div>
             <div class="main-content">
