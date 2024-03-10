@@ -101,7 +101,6 @@ if(isset($_POST["view_id"])){
                                         <input type="email" name="pmail" id="pmail" value="<?php  echo $stdetail['pmail'];   ?>"><br><br>
                                         <label for="ppno">Parent phone</label><br>
                                         <input type="tel" name="ppno" id="ppno" value="<?php  echo $stdetail['ppno'];   ?>"><br><br>
-                                        <input type="text" name="ctry" id="ctry" value="<?php  echo $stdetail['ctry'];   ?>" ><br><br>
                                         <label for="rm">RM</label><br>
                                         <input type="number" name="rm" id="rm" value="<?php  echo $stdetail['rm'];   ?>" ><br><br>
                                         <label for="doj">Date of joining</label><br>
