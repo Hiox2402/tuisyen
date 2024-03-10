@@ -99,7 +99,7 @@ if(isset($_POST["bid"])){
                                         </tr>
                                         <tr>
                                             <td>RM: </td>
-                                            <td id="rm">'.   $result2["rm"]   .' $</td>
+                                            <td id="rm">'.   $result2["rm"]   .' </td>
                                         </tr>
                                         <tr >
                                             <td style="color:#b13935;" colspan="2"><b>Billed sessions</b></td>

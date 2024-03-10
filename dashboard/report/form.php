@@ -192,7 +192,7 @@ $result2 = mysqli_fetch_assoc($result2);
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>School test marks:</td>
+                                        <!--<td>School test marks:</td>
                                         <td><input type="text" name="schmark" id="schmark"></td>
                                     </tr>
                                     <tr>
@@ -202,14 +202,14 @@ $result2 = mysqli_fetch_assoc($result2);
                                     <tr>
                                         <td>Private academic comments:</td>
                                         <td><textarea class="big" name="pvtcomment" id="pvtcomment"></textarea></td>
-                                    </tr>
+                                    </tr>-->
                                     <tr>
                                         <td>Details if you spoke with parent:</td>
                                         <td><textarea class="big" name="parentcomm" id="parentcomm"></textarea></td>
                                     </tr>
                                     <tr>
-                                        <td>Academic comments for parents to view:</td>
-                                        <td><textarea class="big" name="pubcomment" id="pubcomment"></textarea></td>
+                                        <!--<td>Academic comments for parents to view:</td>
+                                        <td><textarea class="big" name="pubcomment" id="pubcomment"></textarea></td>-->
                                     </tr>
 
                             </tbody>

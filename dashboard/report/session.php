@@ -125,13 +125,11 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th style="width:5%;">No.</th>
-                                    <th style="width:10%;">Class date</th>
-                                    <th style="width:18%;">Status</th>
-                                    <th style="width:28%;">Topic covered</th>
-                                    <th style="width:19%;">Homework</th>
-                                    <th style="width:10%;">Score school test/quiz</th>
-                                    <th style="width:10%;">WhiteBoard test score</th>
+                                    <th style="width:10%;">No.</th>
+                                    <th style="width:20%;">Class date</th>
+                                    <th style="width:28%;">Status</th>
+                                    <th style="width:35%;">Topic covered</th>
+                                    <th style="width:42%;">Homework</th>
                                 </tr>
                             </thead>
                             <tbody>';
