@@ -42,7 +42,7 @@
                             </div>-->
                             <button class="btn btn-success btn-block">Login</button>
                            <!-- <div style="padding-top: 10px;">
-                                <a href=""><label style="cursor: pointer;">Forgot Password</label></a> 
+                                <a href=""><label style="cursor: pointer;">Forgot Password</label></a>
                                 <a href="users/register" class="pull-right"><label style="cursor: pointer;">Register</label></a>
                             </div>-->
                         </fieldset>

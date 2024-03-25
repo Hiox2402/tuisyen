@@ -117,15 +117,12 @@
                     if($flag){
                         echo '
                     <div class="progress-details">
-                        <center><h3>Acadamic details </h3></center>
+                        <center><h3>Academic details </h3></center>
                         <br>
                         <div class="stud-info">
                         <span><b>Name:</b> '. $stdprof["sname"] .'</span>
                         <span><b>Course:</b> '. $stdprof["course"] .'</span>
                         <span><b>Phone:</b> '. $stdprof["spno"] .'</span>
-                        <span><b>Timezone:</b> ';
-                        foreach($timezones as $val => $disp)  {    if($val == $stdprof['tzone']){ echo $disp;  } }  
-                        echo '</span>
                         </div>
                         <table class="progress-table">
                             <thead></thead>
@@ -143,8 +140,6 @@
                                                     <td style="width: 5%;">Sl.No</td>
                                                     <td style="width: 35%;">Topic taken</td>
                                                     <td style="width: 20%;">Date</td>
-                                                    <td style="width: 15%;">WB test score</td>
-                                                    <td style="width: 15%;">School test score</td>
                                                 </tr>
                                             </thead>
                                             <tbody>';
@@ -157,8 +152,6 @@
                                         <input type="hidden" name="scid[]" id="scid" value="'. $result_sess["scid"]  .'">
                                         <td><input type="text" name="takenTopic[]" id="takenTopic" value="'. $result_sess["takenTopic"]  .'" required></td>
                                         <td><input type="date" name="scdate[]" id="scdate" value="'. $result_sess["scdate"]  .'" required></td>
-                                        <td><input type="text" name="wbMark[]" id="wbMark" value="'. $result_sess["wbMark"]  .'"></td>
-                                        <td><input type="text" name="schMark[]" id="schMark" value="'. $result_sess["schMark"]  .'"></td>
                                     </tr>';
                                     $j++;
                             }
