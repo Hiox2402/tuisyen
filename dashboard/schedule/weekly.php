@@ -111,7 +111,7 @@ $sch_data = mysqli_query($conn, $sql_show);
                                         <th style="width: 13%;">Student name</th>
                                         <th style="width: 13%">Course</th>
                                         <th style="width: 13%;">Timezone</th>
-                                        <th style="width: 10%;">Student end</th>
+                                        <th style="width: 13%;">Student end</th>
                                         <th style="width: 8%;">Status</th>
                                     </tr>
                                 </thead>
@@ -159,7 +159,6 @@ $sch_data = mysqli_query($conn, $sql_show);
                                         <td><?php 
                                                 $concatdate = $schdetail["scdate"] . ' ' . $schdetail['sctime'];
                                                 $cdate = new DateTime($concatdate, new DateTimeZone('Asia/Calcutta'));                                            
-                                                $cdate->setTimezone(new DateTimeZone($sqldata['tzone']));
                                                 $cdate1 = $cdate->format('Y-m-d');
                                                 $timestamp = strtotime($cdate1);
                                                 $day = date('l', $timestamp);
