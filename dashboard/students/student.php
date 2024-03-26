@@ -75,7 +75,7 @@ $std_data = mysqli_query($conn, $sql_q);
                                 <td><?php  echo $i; ?> <span class="s" style="opacity: 0;"><?php echo $stdetail['sid'];?></span></td>
                                 <td><?php  echo $stdetail['sname']; ?></td>
                                 <td><?php  echo $stdetail['course']; ?></td>
-                                <td><?php  echo $stdetail['rm'] . " Ringgit"; ?></td>
+                                <td><?php  echo $stdetail['rm'] . ""; ?></td>
                                 <td>
                                     <form action="std_profile.php" method="post">
                                         <input type="hidden" name="view_id" value="<?php echo $stdetail['sid']; ?>">

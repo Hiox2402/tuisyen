@@ -117,7 +117,7 @@
                         <span><b>Name:</b> '. $stdprof["sname"] .'</span>
                         <span><b>Course:</b> '. $stdprof["course"] .'</span>
                         <span><b>Phone:</b> '. $stdprof["spno"] .'</span>
-                        <span><b>Timezone:</b> ';
+                        </b> ';
                         foreach($timezones as $val => $disp)  {    if($val == $stdprof['tzone']){ echo $disp;  } }  
                         echo '</span>
                         </div>
