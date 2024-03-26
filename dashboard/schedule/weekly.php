@@ -110,7 +110,7 @@ $sch_data = mysqli_query($conn, $sql_show);
                                         <th style="width: 7%">Time</th>
                                         <th style="width: 13%;">Student name</th>
                                         <th style="width: 13%">Course</th>
-                                        <th style="width: 13%;">Timezone</th>
+                                        <th style="width: 1%;"></th>
                                         <th style="width: 13%;">Student end</th>
                                         <th style="width: 8%;">Status</th>
                                     </tr>
