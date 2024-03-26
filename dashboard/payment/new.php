@@ -178,7 +178,7 @@
                                 <div class="formsub">
                                         <div class="btn-holder">
                                             <button type="submit" id="bt-sub" name="addbill" style="color: #fff;">Create Bill<i class="bx bx-list-plus"></i></button>
-                                            <!-- <button type="submit" id="bt-sub" name="addpay-w-send">Send reciept <i class="bx bxs-send"></i></button> -->
+                                            <!-- <button type="submit" id="bt-sub" name="addpay-w-send">Send receipt <i class="bx bxs-send"></i></button> -->
                                         </div>
                                     </div>
                                 </form>';

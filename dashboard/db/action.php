@@ -317,7 +317,7 @@ if(isset($_POST['view-history'])){
                              </tr>';
     if($complete=='1'){ 
         $output .= '<tr>  
-                        <td width="30%"><label><b>Recieved Fee</b></label></td>  
+                        <td width="30%"><label><b>Received Fee</b></label></td>  
                         <td width="70%">'. $ramt .'</td>  
                     </tr> ';
     }

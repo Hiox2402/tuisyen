@@ -159,7 +159,7 @@ if(isset($_POST["bid"])){
                                             <td><input type="text" name="pamt" id="pamt" disabled value='. $pamt .'></td>
                                          </tr>
                                         <tr>
-                                            <td>Payment Recieved: </td>
+                                            <td>Payment Received: </td>
                                             <td><input type="text" name="ramt" id="ramt" required></td>
                                         </tr>
                                         <tr>
@@ -189,7 +189,7 @@ if(isset($_POST["bid"])){
                                         <div class="btn-holder">
                                             <input type="hidden" name="bid" id="bid" value="'. $bid .'">
                                             <button type="submit" id="bt-sub" name="addpay" style="color: #fff;">Add Payment <i class="bx bx-list-plus"></i></button>
-                                            <!-- <button type="submit" id="bt-sub" name="addpay-w-send">Send reciept <i class="bx bxs-send"></i></button> -->
+                                            <!-- <button type="submit" id="bt-sub" name="addpay-w-send">Send receipt <i class="bx bxs-send"></i></button> -->
                                         </div>
                                     </div>
                                 </form>';
