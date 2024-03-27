@@ -41,10 +41,10 @@
                                 </label>
                             </div>-->
                             <button class="btn btn-success btn-block">Login</button>
-                           <!-- <div style="padding-top: 10px;">
-                                <a href=""><label style="cursor: pointer;">Forgot Password</label></a>
-                                <a href="users/register" class="pull-right"><label style="cursor: pointer;">Register</label></a>
-                            </div>-->
+                           <div style="padding-top: 10px;">
+                                <!--<a href=""><label style="cursor: pointer;">Forgot Password</label></a>-->
+                                <a href="users/Register" class="pull-right"><label style="cursor: pointer;">Register</label></a>
+                            </div>
                         </fieldset>
                     <?php echo form_close(); ?>
 					<div class="col-md-12">
